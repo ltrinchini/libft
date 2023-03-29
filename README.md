@@ -9,6 +9,7 @@
 ## About <a name = "about"></a>
 
 The goal of this project is to create a library equivalent to libc.
+<br>
 Thanks to this project, I now understand how these functions work.
 It also helped me to improve and enrich my knowledge on the C language.
 
