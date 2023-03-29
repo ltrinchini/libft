@@ -9,7 +9,8 @@
 ## About <a name = "about"></a>
 
 The goal of this project is to create a library equivalent to libc.
-This will allow me to understand how the functions I use daily work, as well as improve and enrich my knowledge of the C language.
+Thanks to this project, I now understand how these functions work.
+It also helped me to improve and enrich my knowledge on the C language.
 
 ### Libc functions
 | Function     | Description                                                                          |
@@ -42,15 +43,15 @@ This will allow me to understand how the functions I use daily work, as well as 
 | Function        | Description                                                                                                                                                                              |
 | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ft_substr()     | Allocates with malloc and returns a string from the string 's'                                                                                                                           |
-| ft_strjoin()    | Allocate with malloc and return a new string, result of the concatenation of s1 and s2                                                                                                   |
-| ft_strtrim()    | Allocate with malloc and return a copy of the string 's1', without the characters specified in 'set' at the beginning and end of the string                                              |
-| ft_split()      | Allocate with malloc and return an array of character strings obtained by separating 's' using the character 'c', used as a delimiter. The array must be NULL terminated                 |
-| ft_itoa()       | Allocate with malloc and return a string representing the integer received as argument                                                                                                   |
+| ft_strjoin()    | Allocates with malloc and return a new string, result of the concatenation of s1 and s2                                                                                                  |
+| ft_strtrim()    | Allocates with malloc and return a copy of the string 's1', without the characters specified in 'set' at the beginning and end of the string                                             |
+| ft_split()      | Allocates with malloc and return an array of character strings obtained by separating 's' using the character 'c', used as a delimiter. The array must be NULL terminated                |
+| ft_itoa()       | Allocates with malloc and return a string representing the integer received as argument                                                                                                  |
 | ft_strmapi()    | Applies the 'f' function to each character of the character string passed as an argument to create a new character string with malloc resulting from the successive applications of 'f'  |
 | ft_striteri()   | Applies the function f to each character in the string passed as argument, passing its index as the first argument. Each character is passed by address to f to be modified if necessary |
 | ft_putchar_fd() | Write the character 'c' to the given file descriptor                                                                                                                                     |
 | ft_putstr_fd()  | Write the string 's' to the given file descriptor                                                                                                                                        |
-| ft_putendl_fd() | Writes the string 's' to the given file descriptor, followed by a newline.                                                                                                               |
+| ft_putendl_fd() | Write the string 's' to the given file descriptor, followed by a newline.                                                                                                                |
 | ft_putnbr_fd    | Write the integer 'n' to the given file descriptor                                                                                                                                       |
 
 ### Bonus functions
@@ -63,20 +64,20 @@ typedef struct s_list
 }	t_list;
 ```
 
-| Function          | Description                                                                                                                                                                                                                               |
-| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ft_lstnew()       | Allocate with malloc and return a new element. The 'content' member variable is initialized using the value of the parameter 'thrilled'. The 'next' variable is initialized to NULL                                                       |
-| ft_lstadd_front() | Adds the 'new' element to the beginning of the list                                                                                                                                                                                       |
-| ft_lstsize()      | Counts the number of items in the list                                                                                                                                                                                                    |
-| ft_lstlast()      | Returns the last item in the list                                                                                                                                                                                                         |
-| ft_lstadd_back()  | Adds the 'new' element at the end of the list                                                                                                                                                                                             |
-| ft_lstdelone()    | Frees the memory of the element passed as an argument by using the 'del' function then with free                                                                                                                                          |
-| ft_lstclear()     | Deletes and frees the memory of the element passed as parameter, and of all the elements that follow, using ’del’ and free The initial pointer will be set to NULL                                                                        |
-| ft_lstiter()      | Iterate over the 'lst' list and apply the function 'f' to content each element                                                                                                                                                            |
-| ft_lstmap()       | Iterate over the 'lst' list and apply the function 'f' to the content of each element. Create a new list resulting from the successive applications of 'f'. The 'del' function is there to destroy the content of an element if necessary |
+| Function          | Description                                                                                                                                                                                                                                |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| ft_lstnew()       | Allocates with malloc and return a new element. The 'content' member variable is initialized using the value of the parameter 'thrilled'. The 'next' variable is initialized to NULL                                                       |
+| ft_lstadd_front() | Adds the 'new' element to the beginning of the list                                                                                                                                                                                        |
+| ft_lstsize()      | Counts the number of items in the list                                                                                                                                                                                                     |
+| ft_lstlast()      | Returns the last item in the list                                                                                                                                                                                                          |
+| ft_lstadd_back()  | Adds the 'new' element at the end of the list                                                                                                                                                                                              |
+| ft_lstdelone()    | Frees the memory of the element passed as an argument by using the 'del' function then with free                                                                                                                                           |
+| ft_lstclear()     | Deletes and frees the memory of the element passed as parameter, and of all the elements that follow, using ’del’ and free The initial pointer will be set to NULL                                                                         |
+| ft_lstiter()      | Iterates over the 'lst' list and apply the function 'f' to content each element                                                                                                                                                            |
+| ft_lstmap()       | Iterates over the 'lst' list and apply the function 'f' to the content of each element. Create a new list resulting from the successive applications of 'f'. The 'del' function is there to destroy the content of an element if necessary |
 ## Getting Started <a name = "getting_started"></a>
 
-To create the static archive, all you have to do is:
+To create the static library, all you have to do is:
 
 ``` Bash
 	git clone git@github.com:ltrinchini/libft.git
@@ -86,7 +87,7 @@ To create the static archive, all you have to do is:
 
 ## Usage <a name = "usage"></a>
 
-To use it you must include libft.h in your project and when compiling call the archive like this:
+To use it you must include libft.h in your project and when compiling call the static library like this:
 ``` Bash
 	gcc -o myprogram myprogam.c -L. -lft 
 ```
