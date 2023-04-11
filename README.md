@@ -1,4 +1,4 @@
-# Project Title
+# 42 Libft
 
 ## Table of Contents
 
